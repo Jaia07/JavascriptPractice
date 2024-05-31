@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 101</title>
+</head>
+<body>
+
+    <div id="box">Something is in here</div>
+
+    <script>
+        // console.log("Waiting 2.5 seconds");
+        // let person1 = "James";
+        // setTimeout(function greeting () {
+            
+        //     console.log(`Good morning, bro`);
+        // }, 2500)
+        
+        // console.log("This is the last line");
+
+
+        // let newInterval = setInterval(function() {
+        //     console.log("Printing after 2.5 seconds");
+        //     count++;
+
+        //     if (count === 4) {
+        //         console.log(`This is the last printout. We printed ${count} times`);
+        //         clearInterval(newInterval);
+        //     }
+
+        // }, 2500);
+
+        // const months = ['January', 'February', 'October'];
+
+        // const [jan, feb] = months;
+        // console.log(jan, feb)
+
+        // while(true) {
+        //     let num = prompt("Enter a number: ");
+        //     num = Number(num);
+        //     let randNumber = Math.ceil(Math.random() * 10);
+
+        //     if (num === randNumber) {
+        //         alert(`Yay!!! You have guessed the right number, which is ${num}`);
+        //         break;
+        //     }else{
+        //         console.log(`You guessed ${num}, but the right number was ${randNumber}. Try again!`);
+        //     }
+        // }
+
+        // function counter(){
+        //     if (this.total === undefined) {
+        //         this.total = 1;
+        //     }else {
+        //         this.total++;
+        //     }
+        //     console.log(`Running counter. Total is ${this.total}`)
+        // }
+        // counter();
+        
+        // function hello() {
+        //     console.log("Hi, how are you?")
+        // }
+        // hello();
+
+        // const newHello = function() {
+        //     console.log("This is the new hello.");
+        // }
+        // newHello();
+
+        // const modHello1 = (name) => {
+        //     let total = prompt("Enter any number: ");
+        //     total = Number(total) + 20;
+        //     console.log(name,",",total, " is the number you put in plus 20.");
+        // }
+        // modHello1("James");
+
+        // const modHello2 = () => console.log("This is the last type of function");
+        // modHello2();
+
+        // class MyNewClass {
+        //     // setName(cast){
+        //     //     // this.name = name;
+        //     // }
+        //     // speak() {
+        //     //     console.log(`The user's name is ${this.cast}`)
+        //     // }
+
+        //     constructor(name) {
+        //         this.name = name;
+        //     }
+
+        //     speak() {
+        //         console.log(`Hello from ${this.name}`)
+        //     }
+        // }
+
+        // const thing = new MyNewClass("Adebanjo Joseph");
+        // // thing.setName("Adebanjo Joseph")
+        // // thing.speak();
+        // thing.speak();
+
+        // Fetch API
+        fetch('https://swapi.dev/api/people/1/')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+            })
+    </script>
+</body>
+</html>

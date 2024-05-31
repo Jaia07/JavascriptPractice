@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 201 Project</title>
+</head>
+<body>
+
+    <div id="name"></div>
+    <div id="skin-color"></div>
+    <div class="birth-year"></div>
+    
+    <button class="getRandomCharacter">Randomize!</button>
+
+    <script>
+
+        const randNumber = Math.ceil(Math.random() * 83)
+        const fetchData = (e) => {
+            fetch(`https://swapi.dev/api/people/${randNumber}/`)
+                .then(response => response.json())
+                .then(character => {
+                    console.log(character)
+                })
+
+
+
+        
+            
+            // let characterName = document.getElementById("name")
+            //     characterName.querySelector
+        }
+        const button = document.querySelector(".getRandomCharacter");
+        button.addEventListener('click', fetchData())
+
+    </script>
+</body>
+</html>
